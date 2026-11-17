@@ -1,0 +1,182 @@
+:root {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #1c2430;
+  background: #f4f6f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+header h1 {
+  margin: 0 0 6px;
+  font-size: 30px;
+}
+
+header p {
+  margin: 0 0 24px;
+  color: #485364;
+}
+
+main {
+  display: grid;
+  gap: 20px;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #dde3ec;
+  border-radius: 10px;
+  padding: 20px 22px;
+}
+
+.panel h2 {
+  margin-top: 0;
+  font-size: 19px;
+}
+
+.doc-list {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 0;
+}
+
+.doc-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #eef1f6;
+}
+
+.muted {
+  color: #66707e;
+  font-size: 13px;
+}
+
+.upload {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 14px;
+  color: #205ec9;
+  cursor: pointer;
+}
+
+.upload input {
+  display: block;
+  margin-top: 6px;
+  color: #1c2430;
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.example {
+  background: #eef3fd;
+  border: 1px solid #c9d8f6;
+  color: #205ec9;
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #c6cedb;
+  border-radius: 8px;
+  font: inherit;
+  resize: vertical;
+}
+
+form button[type="submit"] {
+  margin-top: 10px;
+  background: #205ec9;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 22px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+form button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.error {
+  color: #b3261e;
+}
+
+.answer {
+  margin-top: 18px;
+  border-top: 1px solid #eef1f6;
+  padding-top: 14px;
+}
+
+.answer-text {
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+.cite-chip {
+  display: inline-block;
+  margin: 0 2px;
+  padding: 0 6px;
+  font-size: 12px;
+  line-height: 1.5;
+  background: #205ec9;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  vertical-align: super;
+}
+
+.citations {
+  padding-left: 20px;
+}
+
+.citations li {
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.citations li.active {
+  background: #fff7e0;
+  outline: 1px solid #e7c65a;
+}
+
+.cite-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.citations p {
+  margin: 6px 0 2px;
+  color: #3c4656;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+footer {
+  margin-top: 26px;
+  line-height: 1.5;
+}
